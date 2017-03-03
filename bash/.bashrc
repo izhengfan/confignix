@@ -94,7 +94,16 @@ alias la='ls -A'
 alias l='ls -CF'
 alias cd.='cd ..'
 alias sc='source'
+
+# git alias
 alias gck='git checkout'
+alias gcmt='git commit'
+alias gadd='git add'
+alias gpll='git pull'
+alias gpsh='git push'
+alias gsts='git status'
+alias gshw='git show'
+alias gdff='git diff'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -119,6 +128,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# ros setup
 source /opt/ros/jade/setup.bash
-alias scrosws='source /home/fzheng/catkin_ws/devel/setup.bash'
+source ~/catkin_ws/devel/setup.bash
+
+# local dynamic lib setup
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
