@@ -134,7 +134,7 @@ source /opt/ros/jade/setup.bash
 source ~/catkin_ws/devel/setup.bash
 
 # local path
-export PATH=$PATH:~/.local/bin/:~/bin/
+export PATH=$PATH:~/.local/bin/
 
 # local dynamic lib setup
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
