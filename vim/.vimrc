@@ -46,7 +46,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 
-Plugin 'davidhalter/jedi-vim'
+Plugin 'python-mode/python-mode'
+
+" Plugin 'davidhalter/jedi-vim'
 
 " Plugin 'Valloric/YouCompleteMe'
 
