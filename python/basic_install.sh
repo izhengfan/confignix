@@ -1,2 +1,2 @@
 pip install --upgrade pip
-pip install numpy scipy matplotlib sympy ptpython ipython jupyter
+pip install numpy scipy matplotlib sympy ptpython pyzmq ipython jupyter
