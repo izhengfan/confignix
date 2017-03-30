@@ -28,8 +28,8 @@
   <style name="Operator" foreground="#d6bb9a"/>
   <style name="Preprocessor" foreground="#ff6aad"/>
   <style name="Label" foreground="#d6c540"/>
-  <style name="Comment" foreground="#a8abb0" italic="true"/>
-  <style name="Doxygen.Comment" foreground="#65676a" bold="true" italic="true"/>
+  <style name="Comment" foreground="#888a85" italic="true"/>
+  <style name="Doxygen.Comment" foreground="#babdb6" bold="true" italic="true"/>
   <style name="Doxygen.Tag" foreground="#66a334"/>
   <style name="VisualWhitespace" foreground="#555753"/>
   <style name="QmlLocalId" foreground="#9acfd6" italic="true"/>
@@ -44,7 +44,7 @@
   <style name="QmlStateName" foreground="#45c6d6" italic="true"/>
   <style name="Binding" foreground="#ff6aad"/>
   <style name="DisabledCode" foreground="#969696" background="#474747"/>
-  <style name="AddedLine" foreground="#45c6d6"/>
+  <style name="AddedLine" foreground="#babdb6"/>
   <style name="RemovedLine" foreground="#d65645"/>
   <style name="DiffFile" foreground="#66a334"/>
   <style name="DiffLocation" foreground="#d6c540"/>
