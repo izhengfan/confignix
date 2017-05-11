@@ -14,6 +14,10 @@ set shiftwidth=4
 
 map <C-e> :NERDTreeToggle<CR>
 
+let g:Tex_UseMakefile = 0
+let g:Tex_CompileRule_pdf = 'latexmk -f -pdf -src-specials --synctex=1 --interaction=nonstopmode $*'
+let g:Tex_ViewRule_pdf = 'evince'
+let g:Tex_DefaultTargetFormat = 'pdf'
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -48,6 +52,10 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'python-mode/python-mode'
 
+Plugin 'gerw/vim-latex-suite'
+
+Plugin 'wannesm/wmgraphviz.vim'
+
 " Plugin 'davidhalter/jedi-vim'
 
 " Plugin 'Valloric/YouCompleteMe'
@@ -66,4 +74,5 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
 
