@@ -1,5 +1,3 @@
-" execute pathogen#infect()
-
 syntax on
 
 set number
@@ -12,12 +10,28 @@ set ruler
 
 set shiftwidth=4
 
-map <C-e> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 let g:Tex_UseMakefile = 0
 let g:Tex_CompileRule_pdf = 'latexmk -f -pdf -src-specials --synctex=1 --interaction=nonstopmode $*'
 let g:Tex_ViewRule_pdf = 'evince'
 let g:Tex_DefaultTargetFormat = 'pdf'
+
+let g:pymode_python = 'python'
+
+
+
+map <silent> <A-Up> :wincmd k<CR>
+map <silent> <A-Down> :wincmd j<CR>
+map <silent> <A-Left> :wincmd h<CR>
+map <silent> <A-Right> :wincmd l<CR>
+
+
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
+map <C-H> <C-W>h<C-W>_
+map <C-L> <C-W>l<C-W>_
+
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -47,6 +61,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
+Plugin 'godlygeek/tabular'
 
 Plugin 'scrooloose/nerdtree'
 
@@ -56,6 +71,8 @@ Plugin 'gerw/vim-latex-suite'
 
 Plugin 'wannesm/wmgraphviz.vim'
 
+Plugin 'plasticboy/vim-markdown'
+
 " Plugin 'davidhalter/jedi-vim'
 
 " Plugin 'Valloric/YouCompleteMe'
@@ -64,8 +81,8 @@ Plugin 'wannesm/wmgraphviz.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
 "
+"filetype plugin on
 " Brief help
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
@@ -74,5 +91,10 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+
+filetype plugin on
+au BufReadPost *.MD set filetype=markdown
+let g:vim_markdown_no_extensions_in_markdown = 1
 
 

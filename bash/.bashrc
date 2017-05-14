@@ -130,11 +130,15 @@ if ! shopt -oq posix; then
 fi
 
 # ros setup
-source /opt/ros/jade/setup.bash
+source /opt/ros/kinetic/setup.bash
 source ~/catkin_ws/devel/setup.bash
 
+
 # local path
-export PATH=$PATH:~/.local/bin/
+export PATH=$PATH:~/bin/
+
+source /opt/qt57/bin/qt57-env.sh
+
 
 # local dynamic lib setup
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
