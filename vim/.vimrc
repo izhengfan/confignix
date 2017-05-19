@@ -73,6 +73,9 @@ Plugin 'wannesm/wmgraphviz.vim'
 
 Plugin 'plasticboy/vim-markdown'
 
+Plugin 'flazz/vim-colorschemes'
+
+
 " Plugin 'davidhalter/jedi-vim'
 
 " Plugin 'Valloric/YouCompleteMe'
