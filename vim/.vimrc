@@ -1,5 +1,4 @@
 syntax on
-
 set number
 
 set cursorline
@@ -9,28 +8,6 @@ set smartindent
 set ruler
 
 set shiftwidth=4
-
-map <C-n> :NERDTreeToggle<CR>
-
-let g:Tex_UseMakefile = 0
-let g:Tex_CompileRule_pdf = 'latexmk -f -pdf -src-specials --synctex=1 --interaction=nonstopmode $*'
-let g:Tex_ViewRule_pdf = 'evince'
-let g:Tex_DefaultTargetFormat = 'pdf'
-
-let g:pymode_python = 'python'
-
-
-
-map <silent> <A-Up> :wincmd k<CR>
-map <silent> <A-Down> :wincmd j<CR>
-map <silent> <A-Left> :wincmd h<CR>
-map <silent> <A-Right> :wincmd l<CR>
-
-
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-map <C-H> <C-W>h<C-W>_
-map <C-L> <C-W>l<C-W>_
 
 
 set nocompatible              " be iMproved, required
@@ -75,7 +52,6 @@ Plugin 'plasticboy/vim-markdown'
 
 Plugin 'flazz/vim-colorschemes'
 
-
 " Plugin 'davidhalter/jedi-vim'
 
 " Plugin 'Valloric/YouCompleteMe'
@@ -100,4 +76,29 @@ filetype plugin on
 au BufReadPost *.MD set filetype=markdown
 let g:vim_markdown_no_extensions_in_markdown = 1
 
+map <C-n> :NERDTreeToggle<CR>
 
+let g:Tex_UseMakefile = 0
+let g:Tex_CompileRule_pdf = 'latexmk -f -pdf -src-specials --synctex=1 --interaction=nonstopmode $*'
+let g:Tex_ViewRule_pdf = 'evince'
+let g:Tex_DefaultTargetFormat = 'pdf'
+
+let g:pymode_python = 'python'
+
+" Ctrl-p to paste from system clipboard
+noremap <C-p> "+p
+
+" Ctrl-y to copy to system clipboard
+noremap <C-y> "+y
+
+" Alt-DirectKeys to jump between windows 
+map <silent> <A-Up> :wincmd k<CR>
+map <silent> <A-Down> :wincmd j<CR>
+map <silent> <A-Left> :wincmd h<CR>
+map <silent> <A-Right> :wincmd l<CR>
+
+" Ctrl-h/j/k/l to jump between windows
+"nnorenmap <C-j> <C-W>j
+"nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
