@@ -1,4 +1,5 @@
 syntax on
+
 set number
 
 set cursorline
@@ -9,6 +10,8 @@ set ruler
 
 set shiftwidth=4
 
+" our <leader> will be the space key
+let mapleader=" "
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -52,6 +55,8 @@ Plugin 'plasticboy/vim-markdown'
 
 Plugin 'flazz/vim-colorschemes'
 
+Plugin 'majutsushi/tagbar'
+
 " Plugin 'davidhalter/jedi-vim'
 
 " Plugin 'Valloric/YouCompleteMe'
@@ -91,16 +96,9 @@ noremap <C-p> "+p
 " Ctrl-y to copy to system clipboard
 noremap <C-y> "+y
 
-" Alt-DirectKeys to jump between windows 
-map <silent> <A-Up> :wincmd k<CR>
-map <silent> <A-Down> :wincmd j<CR>
-map <silent> <A-Left> :wincmd h<CR>
-map <silent> <A-Right> :wincmd l<CR>
+" <leader>w for windows operation
+nnoremap <leader>w <C-W>
 
-" Ctrl-h/j/k/l to jump between windows
-"nnorenmap <C-j> <C-W>j
-"nnoremap <C-k> <C-W>k
-nnoremap <C-h> <C-W>h
-nnoremap <C-l> <C-W>l
+nmap <F8> :TagbarToggle<CR>
 
 cabbrev rd redraw!
