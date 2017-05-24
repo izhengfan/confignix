@@ -102,3 +102,13 @@ nnoremap <leader>w <C-W>
 nmap <F8> :TagbarToggle<CR>
 
 cabbrev rd redraw!
+
+colorscheme erez
+
+" Enhance the vertical movement over wrapped text:
+noremap k gk
+noremap j gj
+noremap <Up> g<Up>
+noremap <Down> g<Down>
+inoremap <Up> <Esc>g<Up>a
+inoremap <Down> <Esc>g<Down>a
