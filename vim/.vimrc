@@ -4,6 +4,8 @@ set number
 
 set cursorline
 
+set hlsearch
+
 set smartindent
 
 set ruler
