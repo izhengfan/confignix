@@ -1,0 +1,9 @@
+patch:
+  translator/dictionary: luna_pinyin.extended
+  punctuator: 
+    import_preset: symbols 
+  recognizer: 
+    import_preset: default 
+    patterns: 
+      reverse_lookup: "`[a-z]*'?$" 
+      punct: "^/[0-9a-z\\[\\]]*$" #加上了[]符号
