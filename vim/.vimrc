@@ -83,6 +83,12 @@ filetype plugin on
 au BufReadPost *.MD set filetype=markdown
 let g:vim_markdown_no_extensions_in_markdown = 1
 
+" indentation for c/cpp
+set cindent
+set cinoptions+=L0
+set cinoptions+=g0
+
+
 map <C-n> :NERDTreeToggle<CR>
 
 let g:Tex_UseMakefile = 0
@@ -105,7 +111,7 @@ nmap <F8> :TagbarToggle<CR>
 
 cabbrev rd redraw!
 
-colorscheme erez
+colorscheme lucid
 
 " Enhance the vertical movement over wrapped text:
 noremap <Up> g<Up>
