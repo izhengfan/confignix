@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Qt;Development;Translation
+Encoding=UTF-8
+Exec=/opt/qt57/bin/linguist-wrapper
+Name=Qt 5.7.1 Linguist
+GenericName=Translation Tool
+X-KDE-StartupNotify=true
+MimeType=application/x-linguist;
+Terminal=false
+Type=Application
+Icon=opt-qt57-linguist
