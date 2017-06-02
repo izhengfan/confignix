@@ -106,8 +106,7 @@ DEFAULT_USER=`whoami`
 # local path
 export PATH=$PATH:~/bin/
 
-source /opt/qt57/bin/qt57-env.sh
-
+# source /opt/qt57/bin/qt57-env.sh
 
 # local dynamic lib setup
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
