@@ -1,3 +1,4 @@
-for file in *.html; do
-    mv "$file" "`basename "$file" .html`.txt"
+for file in *.html
+do
+ mv "$file" "${file%.html}.txt"
 done
