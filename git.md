@@ -17,3 +17,10 @@ git config core.fileMode false
 # put the changes of local branch to the end of origin/master branch timeline
 git rebase origin/master
 ```
+
+### SSH keygen
+```
+mkdir ~/.ssh 
+cd  ~/.ssh 
+ssh-keygen -t rsa -C "YOUR_EMAIL@YOUREMAIL.COM"
+```
