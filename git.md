@@ -15,6 +15,7 @@ git config core.fileMode false
 
 ```
 # put the changes of local branch to the end of origin/master branch timeline
+git remote update origin
 git rebase origin/master
 ```
 
