@@ -18,6 +18,11 @@ git config core.fileMode false
 git remote update origin
 git rebase origin/master
 ```
+### Check out to a temporary branch:
+
+```
+git checkout --orphan TEMP_BRANCH
+```
 
 ### SSH keygen
 ```
