@@ -1,0 +1,38 @@
+####################################################
+# Global .gitignore Flle
+# Reference:  http://help.github.com/ignore-files/
+# Save this in a file: ~/.gitignore_global
+# Then at the command line (you will see more info if a repo is in the current folder):
+# git config --global core.excludesfile ~/.gitignore_global
+# git config --list
+#####################
+
+# Temp
+*~
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ROS
+*.workspace
+*.workspace.user
+
+# CMake QtCreator
+CMakeLists.txt.user
+
+# VS Code
+.settings
+.vscode
