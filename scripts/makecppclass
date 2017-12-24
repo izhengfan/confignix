@@ -1,0 +1,42 @@
+#!/usr/bin/python3
+
+import sys
+import os
+
+
+def overwriteExistFile(filename):
+
+    if os.path.exists(filename):
+        while(True):
+            yn = input(filename + " exists, overwrite? (y/n):")
+            if yn.lower() == "y":
+                return True
+            elif yn.lower() == "n":
+                return False
+            else:
+                print("Wrong input, try again.\n")
+    else:
+        return True
+
+
+args = sys.argv[1:]
+print("Generate the following class:\n")
+for x in args:
+    print(x)
+
+for x in args:
+    filename = x + '.h'
+    if overwriteExistFile(filename):
+        fileh = open(filename, 'w')
+        fileh.write("#ifndef " + (x + "_H_").upper() + "\n")
+        fileh.write("#define " + (x + "_H_").upper() + "\n")
+        fileh.write("\n")
+        fileh.write("#endif\n")
+        fileh.close()
+
+    filename = x + '.cpp'
+    if overwriteExistFile(filename):
+        filec = open(filename, 'w')
+        filec.write("#include \"" + x + ".h\"" + "\n")
+        filec.close()
+
