@@ -11,6 +11,12 @@ git config --global user.email "mrzhengfan@gmail.com"
 git config core.fileMode false
 ```
 
+### Config global ignore
+
+```
+git config --global core.excludesfile ~/.gitignore_global
+```
+
 ### Git rebase
 
 ```
