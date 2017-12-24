@@ -98,6 +98,7 @@ alias sc='source'
 
 # ros setup
 source /opt/ros/kinetic/setup.zsh
+# source ~/catkin_ws/devel/setup.zsh
 
 # default user name to hide username@host info
 DEFAULT_USER=`whoami`
@@ -105,7 +106,18 @@ DEFAULT_USER=`whoami`
 # local path
 export PATH=$PATH:~/bin/
 
-# source /opt/qt57/bin/qt57-env.sh
+# only for qtcreator-ros-plugin (qt57 version)
+#source /opt/qt57/bin/qt57-env.sh
+# for adjusting local pyqt path
+#export LD_LIBRARY_PATH=~/.local/lib/python3.5/site-packages/PyQt5/Qt/lib:$LD_LIBRARY_PATH
 
 # local dynamic lib setup
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/lib:/usr/lib/x86_64-linux-gnu
+
+# temp for ORB_SLAM
+#export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:$HOME/workspace/ORB_SLAM:$HOME/workspace/ORB_SLAM2:$HOME/workspace/LearnVIORB/Examples/ROS/ORB_VIO
+
+# fix python path: ros setup will add new python path as below, which may corrupt python3 package import 
+#     export PYTHONPATH=$PYTHONPATH:/opt/ros/kinetic/lib/python2.7/dist-packages
+export PYTHONPATH=""
+# if you want to run python node of ROS, source setup file of ros again
