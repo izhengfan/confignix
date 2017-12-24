@@ -25,6 +25,7 @@ Thumbs.db
 *.exe
 *.o
 *.so
+*.lib
 
 # ROS
 *.workspace
