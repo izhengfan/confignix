@@ -111,7 +111,7 @@ nmap <F8> :TagbarToggle<CR>
 
 cabbrev rd redraw!
 
-colorscheme lucid
+" colorscheme lucid
 
 " Enhance the vertical movement over wrapped text:
 noremap <Up> g<Up>
