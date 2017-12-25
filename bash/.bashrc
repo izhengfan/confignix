@@ -142,3 +142,8 @@ source /opt/qt57/bin/qt57-env.sh
 
 # local dynamic lib setup
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
+
+# ROS setup will add new python path as below, which may corrupt python3 package import and pip3 
+#     export PYTHONPATH=$PYTHONPATH:/opt/ros/kinetic/lib/python2.7/dist-packages
+# to use python3 normally, execute the following command
+#export PYTHONPATH=""

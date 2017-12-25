@@ -117,7 +117,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/lib:/usr/lib/x86_64-
 # temp for ORB_SLAM
 #export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:$HOME/workspace/ORB_SLAM:$HOME/workspace/ORB_SLAM2:$HOME/workspace/LearnVIORB/Examples/ROS/ORB_VIO
 
-# fix python path: ros setup will add new python path as below, which may corrupt python3 package import 
+# ros setup will add new python path as below, which may corrupt python3 package import and pip3 
 #     export PYTHONPATH=$PYTHONPATH:/opt/ros/kinetic/lib/python2.7/dist-packages
-export PYTHONPATH=""
-# if you want to run python node of ROS, source setup file of ros again
+# to use python3 normally, execute the following command
+#export PYTHONPATH=""
