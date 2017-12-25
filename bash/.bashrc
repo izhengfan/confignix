@@ -131,13 +131,16 @@ fi
 
 # ros setup
 source /opt/ros/kinetic/setup.bash
-source ~/catkin_ws/devel/setup.bash
+if [ -f ~/catkin_ws/devel/setup.bash ]; then
+  source ~/catkin_ws/devel/setup.bash
+fi
 
 
 # local path
 export PATH=$PATH:~/bin/
 
-source /opt/qt57/bin/qt57-env.sh
+# for qtcreator-ros-plugin (qt57 version)
+#source /opt/qt57/bin/qt57-env.sh
 
 
 # local dynamic lib setup

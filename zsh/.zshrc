@@ -98,7 +98,9 @@ alias sc='source'
 
 # ros setup
 source /opt/ros/kinetic/setup.zsh
-# source ~/catkin_ws/devel/setup.zsh
+if [ -f ~/catkin_ws/devel/setup.zsh ]; then
+  source ~/catkin_ws/devel/setup.zsh
+fi
 
 # default user name to hide username@host info
 DEFAULT_USER=`whoami`
