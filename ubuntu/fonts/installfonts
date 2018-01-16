@@ -1,2 +1,0 @@
-cd ~/.local/share/fonts
-fc-cache -v -f
