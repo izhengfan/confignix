@@ -97,7 +97,9 @@ alias sc='source'
 
 
 # ros setup
-source /opt/ros/kinetic/setup.zsh
+if [ -f /opt/ros/kinetic/setup.zsh ]; then 
+    source /opt/ros/kinetic/setup.zsh
+fi
 if [ -f ~/catkin_ws/devel/setup.zsh ]; then
   source ~/catkin_ws/devel/setup.zsh
 fi

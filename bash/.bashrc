@@ -130,7 +130,9 @@ if ! shopt -oq posix; then
 fi
 
 # ros setup
-source /opt/ros/kinetic/setup.bash
+if [ -f /opt/ros/kinetic/setup.bash ]; then
+    source /opt/ros/kinetic/setup.bash
+fi
 if [ -f ~/catkin_ws/devel/setup.bash ]; then
   source ~/catkin_ws/devel/setup.bash
 fi
