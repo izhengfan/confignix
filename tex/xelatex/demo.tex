@@ -1,0 +1,78 @@
+% !Mode:: "TeX:UTF-8"
+% usage: 
+%    xelatex demo.tex
+\documentclass[]{article}
+\usepackage{amsmath, amssymb, times}
+\usepackage{xeCJK} 
+\usepackage{fontspec, xunicode}
+\usepackage{indentfirst}
+
+\newfontfamily\song{Noto Serif CJK SC}
+\newfontfamily\code{FreeMono}
+\setmainfont{Liberation Serif}
+\setmonofont{Ubuntu Mono}
+\setCJKmainfont[ItalicFont={AR PL UKai CN}]{Noto Serif CJK SC}
+% \setCJKmainfont[ItalicFont={AR PL UKai CN}, BoldFont={Noto Sans CJK SC}]{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Serif CJK SC}
+
+\linespread{1.2}% 行距
+
+\setlength{\parskip}{0.5em}% 段间距
+
+
+\begin{document}
+
+\title{A Title 一个标题}
+\author{Fan ZHENG}
+\maketitle
+
+\section{Section 1 第一节}
+
+示例文本。Demo Text.
+
+\textbf{加粗文本，bf text}. 
+
+\textit{斜体文本。it text}. 
+
+\emph{强调文本 emph text}. 
+
+\textsf{无衬线字体 san serif}.
+
+\begin{quotation}
+    \textit{猜想}: $Ax = b$
+\end{quotation}
+
+假定这个猜想是对的。
+
+\section{Code 代码}
+\begin{verbatim}
+   int i = 0;
+   // 进入循环
+   for(; i < 5; ++i)
+   {
+       cout << i << endl;
+   }
+\end{verbatim}
+
+单独指定 code：{\code std::cout << "hello"; }.
+
+\section{不同的字体环境}
+
+\begin{verbatim}
+   Command   Declaration
+    
+   \textrm   \rmfamily   Roman family
+   \textsf   \sffamily   Sans serif family
+   \texttt   \ttfamily   Typewriter family
+    
+   \textup   \upshape    Upright shape
+   \textit   \itshape    Italic shape
+   \textsl   \slshape    Slanted shape
+   \textsc   \scshape    Small caps shape
+    
+   \textmd   \mdseries   Medium series
+   \textbf   \bfseries   Boldface series
+\end{verbatim}
+
+\end{document}
