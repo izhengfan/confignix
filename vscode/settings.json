@@ -1,0 +1,27 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontSize":18,
+    "editor.fontFamily": "'Iosevka Term'",
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.zoomLevel": 0,
+    "editor.wordWrap": "on",
+    "latex-workshop.latex.autoBuild.onSave.enabled": false,
+    "latex-workshop.latex.toolchain": [
+        {
+          "command": "latexmk",
+          "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-xelatex",
+            "-pdf",
+            "%DOC%"
+          ]
+        }
+      ],
+      
+    "editor.renderWhitespace": "all",
+    "window.restoreWindows": "none",
+    "git.autofetch": true,
+    "editor.multiCursorModifier": "ctrlCmd"
+  }
