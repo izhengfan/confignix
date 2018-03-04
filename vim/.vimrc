@@ -55,9 +55,13 @@ Plugin 'wannesm/wmgraphviz.vim'
 
 Plugin 'plasticboy/vim-markdown'
 
-Plugin 'flazz/vim-colorschemes'
+" Plugin 'flazz/vim-colorschemes'
 
 Plugin 'majutsushi/tagbar'
+
+Plugin 'Rip-Rip/clang_complete'
+
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " Plugin 'davidhalter/jedi-vim'
 
@@ -96,7 +100,18 @@ let g:Tex_CompileRule_pdf = 'latexmk -f -pdf -src-specials --synctex=1 --interac
 let g:Tex_ViewRule_pdf = 'evince'
 let g:Tex_DefaultTargetFormat = 'pdf'
 
-let g:pymode_python = 'python'
+let g:pymode_python = 'python3'
+
+" path to directory where library can be found
+let g:clang_library_path = $HOME.'/.local/clang_llvm_5.0.1/lib'
+let g:clang_user_options = '-std=c++11'
+
+" cpp highlight enhance
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+"let g:cpp_experimental_template_highlight = 1
+
 
 " Ctrl-p to paste from system clipboard
 noremap <C-p> "+p
