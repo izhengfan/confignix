@@ -133,3 +133,7 @@ noremap <Up> g<Up>
 noremap <Down> g<Down>
 inoremap <Up> <Esc>g<Up>a
 inoremap <Down> <Esc>g<Down>a
+
+" mannual folding 
+" :set foldmethod=manual
+let g:vim_markdown_folding_disabled = 1
