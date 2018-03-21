@@ -24,4 +24,8 @@
     "window.restoreWindows": "none",
     "git.autofetch": true,
     "editor.multiCursorModifier": "ctrlCmd"
+    "workbench.colorTheme": "Quiet Light",
+    // Controls the font size in pixels used in the markdown preview.
+    "markdown.preview.fontSize": 18,
+    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Noto Sans CJK SC', sans-serif"
   }
