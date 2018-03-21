@@ -2,7 +2,7 @@ syntax on
 
 set number
 
-set cursorline
+"set cursorline
 
 set hlsearch
 
@@ -62,6 +62,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'Rip-Rip/clang_complete'
 
 Plugin 'octol/vim-cpp-enhanced-highlight'
+
+Plugin 'tpope/vim-surround'
 
 " Plugin 'davidhalter/jedi-vim'
 
@@ -137,3 +139,6 @@ inoremap <Down> <Esc>g<Down>a
 " mannual folding 
 " :set foldmethod=manual
 let g:vim_markdown_folding_disabled = 1
+
+" enable matchit plugin
+runtime macros/matchit.vim
