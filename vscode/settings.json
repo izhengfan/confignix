@@ -23,7 +23,7 @@
     "editor.renderWhitespace": "all",
     "window.restoreWindows": "none",
     "git.autofetch": true,
-    "editor.multiCursorModifier": "ctrlCmd"
+    "editor.multiCursorModifier": "ctrlCmd",
     "workbench.colorTheme": "Quiet Light",
     // Controls the font size in pixels used in the markdown preview.
     "markdown.preview.fontSize": 18,
