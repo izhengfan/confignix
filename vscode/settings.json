@@ -1,7 +1,7 @@
 {
     "workbench.iconTheme": "vscode-icons",
     "editor.fontSize":18,
-    "editor.fontFamily": "'Iosevka Term'",
+    "editor.fontFamily": "'Iosevka Term','Noto Sans CJK SC' ",
     "vsicons.dontShowNewVersionMessage": true,
     "window.zoomLevel": 0,
     "editor.wordWrap": "on",
