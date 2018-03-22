@@ -126,7 +126,9 @@ nnoremap <leader>w <C-W>
 
 nmap <F8> :TagbarToggle<CR>
 
+" customized abbrev in command-line
 cabbrev rd redraw!
+cabbrev tbf TableFormat
 
 " colorscheme lucid
 
