@@ -65,6 +65,8 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 
 Plugin 'tpope/vim-surround'
 
+Bundle 'ShowTrailingWhitespace'
+
 " Plugin 'davidhalter/jedi-vim'
 
 " Plugin 'Valloric/YouCompleteMe'
@@ -129,7 +131,8 @@ nmap <F8> :TagbarToggle<CR>
 " customized abbrev in command-line
 cabbrev rd redraw!
 cabbrev tbf TableFormat
-
+" byebye spaces in the line end
+cabbrev bbsp %s/\s\+$//<cr>:let @/=''<CR>
 " colorscheme lucid
 
 " Enhance the vertical movement over wrapped text:
@@ -138,7 +141,7 @@ noremap <Down> g<Down>
 inoremap <Up> <Esc>g<Up>a
 inoremap <Down> <Esc>g<Down>a
 
-" mannual folding 
+" mannual folding
 " :set foldmethod=manual
 let g:vim_markdown_folding_disabled = 1
 
