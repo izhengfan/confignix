@@ -141,6 +141,9 @@ noremap <Down> g<Down>
 inoremap <Up> <Esc>g<Up>a
 inoremap <Down> <Esc>g<Down>a
 
+" double esc to set no-highlight
+nnoremap <silent> <Esc><Esc> :nohl<CR>
+
 " mannual folding
 " :set foldmethod=manual
 let g:vim_markdown_folding_disabled = 1
