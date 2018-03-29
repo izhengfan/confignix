@@ -65,6 +65,8 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 
 Plugin 'tpope/vim-surround'
 
+Plugin 'skywind3000/asyncrun.vim'
+
 Bundle 'ShowTrailingWhitespace'
 
 " Plugin 'davidhalter/jedi-vim'
