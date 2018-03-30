@@ -39,3 +39,9 @@ CMakeLists.txt.user
 # VS Code
 .settings
 .vscode
+
+# kdevelop
+*.kdev
+
+# tags
+tags
