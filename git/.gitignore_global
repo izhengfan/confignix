@@ -41,7 +41,10 @@ CMakeLists.txt.user
 .vscode
 
 # kdevelop
+*.kdev4
+*.kdev3
 *.kdev
+
 
 # tags
 tags
