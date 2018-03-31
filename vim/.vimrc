@@ -47,6 +47,7 @@ Plugin 'godlygeek/tabular'
 
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'tpope/vim-commentary'
 Plugin 'python-mode/python-mode'
 
 Plugin 'gerw/vim-latex-suite'
