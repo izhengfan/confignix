@@ -48,6 +48,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'scrooloose/nerdtree'
 
 Plugin 'tpope/vim-commentary'
+
 Plugin 'python-mode/python-mode'
 
 Plugin 'gerw/vim-latex-suite'
@@ -181,3 +182,37 @@ set timeoutlen=300
 autocmd InsertLeave * call Fcitx2en()
 autocmd InsertEnter * call Fcitx2zh()
 " end handling fcitx
+
+" Ugly but useful comments/uncomments
+"  Ref: http://vim.wikia.com/wiki/Easy_(un)commenting_out_of_source_code
+" lhs comments
+nnoremap ,# :let lhs=@/<CR>:s/^/#/e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,/ :let lhs=@/<CR>:s/^/\/\//e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,> :let lhs=@/<CR>:s/^/> /e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ," :let lhs=@/<CR>:s/^/\"/e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,% :let lhs=@/<CR>:s/^/%/e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,! :let lhs=@/<CR>:s/^/!/e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,; :let lhs=@/<CR>:s/^/;/e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,- :let lhs=@/<CR>:s/^/--/e<CR>:let @/=lhs<CR>:noh<CR>
+
+" wrapping comments
+nnoremap ,* :let lhs=@/<CR>:s/^\(.*\)$/\/\* \1 \*\//e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,( :let lhs=@/<CR>:s/^\(.*\)$/\(\* \1 \*\)/e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,< :let lhs=@/<CR>:s/^\(.*\)$/<!-- \1 -->/e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,d :let lhs=@/<CR>:s/^\([/(]\*\\|<!--\) \(.*\) \(\*[/)]\\|-->\)$/\2/e<CR>:let @/=lhs<CR>:noh<CR>
+
+" lhs uncomment
+nnoremap ,,# :let lhs=@/<CR>:s/^\+#//e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,,/ :let lhs=@/<CR>:s/^\+\/\///e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,,> :let lhs=@/<CR>:s/^\+> //e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,," :let lhs=@/<CR>:s/^\+\"//e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,,% :let lhs=@/<CR>:s/^\+%//e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,,! :let lhs=@/<CR>:s/^\+!//e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,,; :let lhs=@/<CR>:s/^\+;//e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,,- :let lhs=@/<CR>:s/^\+--//e<CR>:let @/=lhs<CR>:noh<CR>
+
+" general uncomment
+"" Warning: only work for comment symbols with spaces
+nnoremap ,,u 0daW==
+nnoremap ,,U 0daW$daw==
+" end comments/uncomments
