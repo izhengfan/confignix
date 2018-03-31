@@ -135,7 +135,8 @@ nmap <F8> :TagbarToggle<CR>
 cabbrev rd redraw!
 cabbrev tbf TableFormat
 " byebye spaces in the line end
-cabbrev bbsp %s/\s\+$//<cr>:let @/=''<CR>
+cabbrev bbsp let bbspr=@/<CR>:%s/\s\+$//e<cr>:let @/=bbspr<CR>:noh<CR>
+cabbrev bbspl let bbspr=@/<CR>:s/\s\+$//e<cr>:let @/=bbspr<CR>:noh<CR>
 " colorscheme lucid
 
 " Enhance the vertical movement over wrapped text:
