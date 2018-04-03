@@ -132,6 +132,9 @@ alias gsts='git status'
 alias gshw='git show'
 alias gdff='git diff'
 
+# automatically show linenumber in grep
+alias grep='grep -n'
+
 # ros setup
 if [ -f /opt/ros/kinetic/setup.bash ]; then
     source /opt/ros/kinetic/setup.bash
