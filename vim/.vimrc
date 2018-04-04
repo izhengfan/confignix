@@ -129,8 +129,10 @@ noremap <C-y> "+y
 
 " <leader>w for windows operation
 nnoremap <leader>w <C-W>
+" <leader>s for saving files
+nnoremap <leader>s :w<CR>
 
-nmap <F8> :TagbarToggle<CR>
+map <F8> :TagbarToggle<CR>
 
 " customized abbrev in command-line
 cabbrev rd redraw!
@@ -140,11 +142,16 @@ cabbrev bbsp let bbspr=@/<CR>:%s/\s\+$//e<cr>:let @/=bbspr<CR>:noh<CR>
 cabbrev bbspl let bbspr=@/<CR>:s/\s\+$//e<cr>:let @/=bbspr<CR>:noh<CR>
 " colorscheme lucid
 
-" Enhance the vertical movement over wrapped text:
-noremap <Up> g<Up>
-noremap <Down> g<Down>
-inoremap <Up> <Esc>g<Up>a
-inoremap <Down> <Esc>g<Down>a
+" No arrow keys
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
+" Better vertical movement in swapped text
+nnoremap k gk
+nnoremap gk k
+nnoremap j gj
+nnoremap gj j
 
 " double esc to set no-highlight
 nnoremap <silent> <Esc><Esc> :nohl<CR>
