@@ -147,7 +147,7 @@ map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
-" Better vertical movement in swapped text
+" Better vertical movement in wrapped text
 nnoremap k gk
 nnoremap gk k
 nnoremap j gj
