@@ -69,6 +69,8 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'skywind3000/asyncrun.vim'
 
+Plugin 'easymotion/vim-easymotion'
+
 Plugin 'Yggdroot/LeaderF'
 
 Bundle 'ShowTrailingWhitespace'
