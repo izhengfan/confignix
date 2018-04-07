@@ -57,6 +57,9 @@ Plugin 'wannesm/wmgraphviz.vim'
 
 Plugin 'plasticboy/vim-markdown'
 
+"Plugin 'iamcco/mathjax-support-for-mkdp'
+"Plugin 'iamcco/markdown-preview.vim'
+
 " Plugin 'flazz/vim-colorschemes'
 
 Plugin 'majutsushi/tagbar'
@@ -111,7 +114,7 @@ map <C-n> :NERDTreeToggle<CR>
 
 let g:Tex_UseMakefile = 0
 let g:Tex_CompileRule_pdf = 'latexmk -f -pdf -src-specials --synctex=1 --interaction=nonstopmode $*'
-let g:Tex_ViewRule_pdf = 'evince'
+let g:Tex_ViewRule_pdf = 'okular --unique'
 let g:Tex_DefaultTargetFormat = 'pdf'
 
 let g:pymode_python = 'python3'
