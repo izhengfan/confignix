@@ -73,6 +73,8 @@ Plugin 'easymotion/vim-easymotion'
 
 Plugin 'Yggdroot/LeaderF'
 
+Plugin 'kien/rainbow_parentheses.vim'
+
 Bundle 'ShowTrailingWhitespace'
 
 " Plugin 'davidhalter/jedi-vim'
@@ -227,3 +229,27 @@ nnoremap ,,- :let lhs=@/<CR>:s/^\+--//e<CR>:let @/=lhs<CR>:noh<CR>
 nnoremap ,,u 0daW==
 nnoremap ,,U 0daW$daw==
 " end comments/uncomments
+
+" rainbow parentheses
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
