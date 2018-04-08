@@ -218,14 +218,14 @@ nnoremap ,< :let lhs=@/<CR>:s/^\(.*\)$/<!-- \1 -->/e<CR>:let @/=lhs<CR>:noh<CR>
 nnoremap ,d :let lhs=@/<CR>:s/^\([/(]\*\\|<!--\) \(.*\) \(\*[/)]\\|-->\)$/\2/e<CR>:let @/=lhs<CR>:noh<CR>
 
 " lhs uncomment
-nnoremap ,,# :let lhs=@/<CR>:s/^\+#//e<CR>:let @/=lhs<CR>:noh<CR>
-nnoremap ,,/ :let lhs=@/<CR>:s/^\+\/\///e<CR>:let @/=lhs<CR>:noh<CR>
-nnoremap ,,> :let lhs=@/<CR>:s/^\+> //e<CR>:let @/=lhs<CR>:noh<CR>
-nnoremap ,," :let lhs=@/<CR>:s/^\+\"//e<CR>:let @/=lhs<CR>:noh<CR>
-nnoremap ,,% :let lhs=@/<CR>:s/^\+%//e<CR>:let @/=lhs<CR>:noh<CR>
-nnoremap ,,! :let lhs=@/<CR>:s/^\+!//e<CR>:let @/=lhs<CR>:noh<CR>
-nnoremap ,,; :let lhs=@/<CR>:s/^\+;//e<CR>:let @/=lhs<CR>:noh<CR>
-nnoremap ,,- :let lhs=@/<CR>:s/^\+--//e<CR>:let @/=lhs<CR>:noh<CR>
+nnoremap ,,# :let lhs=@/<CR>:s/^\+\s*#//e<CR>:let @/=lhs<CR>:noh<CR>==
+nnoremap ,,/ :let lhs=@/<CR>:s/^\+\s*\/\///e<CR>:let @/=lhs<CR>:noh<CR>==
+nnoremap ,,> :let lhs=@/<CR>:s/^\+\s*> //e<CR>:let @/=lhs<CR>:noh<CR>==
+nnoremap ,," :let lhs=@/<CR>:s/^\+\s*\"//e<CR>:let @/=lhs<CR>:noh<CR>==
+nnoremap ,,% :let lhs=@/<CR>:s/^\+\s*%//e<CR>:let @/=lhs<CR>:noh<CR>==
+nnoremap ,,! :let lhs=@/<CR>:s/^\+\s*!//e<CR>:let @/=lhs<CR>:noh<CR>==
+nnoremap ,,; :let lhs=@/<CR>:s/^\+\s*;//e<CR>:let @/=lhs<CR>:noh<CR>==
+nnoremap ,,- :let lhs=@/<CR>:s/^\+\s*--//e<CR>:let @/=lhs<CR>:noh<CR>==
 
 " general uncomment
 "" Warning: only work for comment symbols with spaces
