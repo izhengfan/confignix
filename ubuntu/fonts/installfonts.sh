@@ -8,4 +8,9 @@ cd ~/.local/share/fonts
 fc-cache -v -f
 cd -
 rm -rf iosevka.zip iosevka
+sudo cp /etc/fonts/conf.avail/30-cjk-aliases.conf /etc/fonts/conf.avail/30-cjk-aliases.conf.backup
 sudo cp 30-cjk-aliases.conf /etc/fonts/conf.avail/
+# Below set fonts; optional.
+gsettings set org.gnome.desktop.interface document-font-name 'Roboto 11'
+gsettings set org.gnome.desktop.interface font-name 'Roboto 11'
+gsettings set org.gnome.desktop.interface monospace-font-name 'Iosevka Term 13'
