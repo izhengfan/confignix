@@ -165,7 +165,7 @@ nnoremap gj j
 " double esc to set no-highlight
 nnoremap <silent> <Esc><Esc> :nohl<CR>
 
-" mannual folding
+" manual folding
 " :set foldmethod=manual
 let g:vim_markdown_folding_disabled = 1
 
