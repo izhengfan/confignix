@@ -45,6 +45,8 @@ CMakeLists.txt.user
 *.kdev3
 *.kdev
 
+# idea ide
+.idea
 
 # tags
 tags
