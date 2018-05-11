@@ -100,9 +100,12 @@ alias sc='source'
 if [ -f /opt/ros/kinetic/setup.zsh ]; then 
     source /opt/ros/kinetic/setup.zsh
 fi
-if [ -f ~/catkin_ws/devel/setup.zsh ]; then
-  source ~/catkin_ws/devel/setup.zsh
-fi
+# if [ -f ~/catkin_ws/devel/setup.zsh ]; then
+#   source ~/catkin_ws/devel/setup.zsh
+# fi
+# soruce ~/catkin_ws/setup.zsh may pollute PYTHONPATH
+# to use python3 normally, execute the following command
+#export PYTHONPATH=""
 
 # default user name to hide username@host info
 DEFAULT_USER=`whoami`
@@ -121,7 +124,3 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/lib:/usr/lib/x86_64-
 # temp for ORB_SLAM
 #export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:$HOME/workspace/ORB_SLAM:$HOME/workspace/ORB_SLAM2:$HOME/workspace/LearnVIORB/Examples/ROS/ORB_VIO
 
-# ROS setup will add new python path as below, which may corrupt python3 package import and pip3 
-#     export PYTHONPATH=$PYTHONPATH:/opt/ros/kinetic/lib/python2.7/dist-packages
-# to use python3 normally, execute the following command
-#export PYTHONPATH=""

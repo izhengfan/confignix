@@ -147,23 +147,19 @@ alias cmake='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
 if [ -f /opt/ros/kinetic/setup.bash ]; then
     source /opt/ros/kinetic/setup.bash
 fi
-if [ -f ~/catkin_ws/devel/setup.bash ]; then
-  source ~/catkin_ws/devel/setup.bash
-fi
+# if [ -f ~/catkin_ws/devel/setup.bash ]; then
+#   source ~/catkin_ws/devel/setup.bash
+# fi
+
+# soruce ~/catkin_ws/setup.bash may pollute PYTHONPATH
+# to use python3 normally, execute the following command
+#export PYTHONPATH=""
 
 # local path (it seems this is set in Ubuntu default)
 # export PATH=$PATH:~/.local/bin/
 
-# for qtcreator-ros-plugin (qt57 version)
-#source /opt/qt57/bin/qt57-env.sh
-
 # local dynamic lib setup
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
-
-# ROS setup will add new python path as below, which may corrupt python3 package import and pip3
-#     export PYTHONPATH=$PYTHONPATH:/opt/ros/kinetic/lib/python2.7/dist-packages
-# to use python3 normally, execute the following command
-#export PYTHONPATH=""
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
