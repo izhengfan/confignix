@@ -50,3 +50,14 @@ CMakeLists.txt.user
 
 # tags
 tags
+
+compile_commands.json
+
+# latex
+*.log
+*.fls
+*.bbl
+*.aux
+*.synctex.gz
+*.blg
+*.fdb_latexmk
