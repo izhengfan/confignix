@@ -61,3 +61,5 @@ compile_commands.json
 *.fls
 *.log
 *.synctex.gz
+*.dvi
+*.toc
