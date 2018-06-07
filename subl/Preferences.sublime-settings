@@ -1,0 +1,38 @@
+// location: ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+{
+	"added_words":
+	[
+		"Jacobians",
+		"Odometry",
+		"odometry",
+		"keyframes",
+		"keyframe",
+		"reprojection",
+		"relocalization",
+		"Kalman",
+		"preintegration",
+		"outlier",
+		"followingly",
+		"holonomic",
+		"odometric",
+		"extrinsics",
+		"vertices",
+		"covisible",
+		"covisibility",
+		"online",
+		"epipolar",
+		"linearization"
+	],
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Ocean.tmTheme",
+	"font_face": "Iosevka Term",
+	"font_size": 15,
+	"ignored_packages":
+	[
+		"Package Control",
+		"Vintage"
+	],
+	"theme": "Boxy Ocean.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"draw_white_space": "all",
+	"update_check": false
+}
