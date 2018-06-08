@@ -34,7 +34,7 @@ Thumbs.db
 CATKIN_IGNORE
 
 # CMake QtCreator
-CMakeLists.txt.user
+CMakeLists.txt.user*
 
 # VS Code
 .settings
