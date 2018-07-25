@@ -63,3 +63,6 @@ compile_commands.json
 *.synctex.gz
 *.dvi
 *.toc
+
+# python
+__pycache__
