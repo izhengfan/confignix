@@ -31,10 +31,10 @@ Thumbs.db
 # ROS
 *.workspace
 *.workspace.user
-CATKIN_IGNORE
+CATKIN_IGNORE*
 
 # CMake QtCreator
-CMakeLists.txt.user
+CMakeLists.txt.user*
 
 # VS Code
 .settings
@@ -65,4 +65,5 @@ compile_commands.json
 *.toc
 
 build
-CATKIN_IGNORE*
+# python
+__pycache__
