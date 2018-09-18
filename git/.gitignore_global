@@ -67,3 +67,6 @@ compile_commands.json
 build
 # python
 __pycache__
+
+# vim
+compile_commands.json
