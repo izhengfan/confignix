@@ -28,8 +28,8 @@
   <style name="Operator" foreground="#d6bb9a"/>
   <style name="Preprocessor" foreground="#ff6aad"/>
   <style name="Label" foreground="#d6c540"/>
-  <style name="Comment" foreground="#888a85" italic="true"/>
-  <style name="Doxygen.Comment" foreground="#babdb6" bold="true" italic="true"/>
+  <style name="Comment" foreground="#888a85"/>
+  <style name="Doxygen.Comment" foreground="#8c8c8c"/>
   <style name="Doxygen.Tag" foreground="#66a334"/>
   <style name="VisualWhitespace" foreground="#555753"/>
   <style name="QmlLocalId" foreground="#9acfd6" italic="true"/>
@@ -60,5 +60,6 @@
   <style name="Error" underlineColor="#d65645" underlineStyle="SingleUnderline"/>
   <style name="ErrorContext" underlineColor="#d65645" underlineStyle="DotLine"/>
   <style name="Declaration"/>
-  <style name="C_OUTPUT_ARGUMENT"/>
+  <style name="OutputArgument" foreground="#000000" background="#ffffff" italic="true"/>
+  <style name="LastStyleSentinel"/>
 </style-scheme>
