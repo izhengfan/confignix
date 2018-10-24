@@ -32,7 +32,7 @@
   <style name="Comment" foreground="#888a85"/>
   <style name="Doxygen.Comment" foreground="#8c8c8c"/>
   <style name="Doxygen.Tag" foreground="#66a334"/>
-  <style name="VisualWhitespace" foreground="#555753"/>
+  <style name="VisualWhitespace" foreground="#414445"/>
   <style name="QmlLocalId" foreground="#9acfd6" italic="true"/>
   <style name="QmlExternalId" foreground="#9aa7d6" italic="true"/>
   <style name="QmlTypeId" foreground="#66a334"/>
@@ -62,6 +62,6 @@
   <style name="ErrorContext" underlineColor="#d65645" underlineStyle="DotLine"/>
   <style name="Declaration"/>
   <style name="FunctionDefinition"/>
-  <style name="OutputArgument" foreground="#d6bb9a" />
+  <style name="OutputArgument" foreground="#d6bb9a"/>
   <style name="LastStyleSentinel"/>
 </style-scheme>
