@@ -62,6 +62,6 @@
   <style name="ErrorContext" underlineColor="#d65645" underlineStyle="DotLine"/>
   <style name="Declaration"/>
   <style name="FunctionDefinition"/>
-  <style name="OutputArgument" foreground="#d6bb9a"/>
+  <!-- <style name="OutputArgument" foreground="#d6bb9a"/> -->
   <style name="LastStyleSentinel"/>
 </style-scheme>
