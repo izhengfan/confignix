@@ -61,10 +61,16 @@ compile_commands.json
 *.fls
 *.log
 *.synctex.gz
+*.lof
+*.lot
+*.xdv
 *.dvi
 *.toc
+*.out
 
 build
+cmake-build-debug
+
 # python
 __pycache__
 
