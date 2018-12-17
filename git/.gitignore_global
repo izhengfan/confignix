@@ -65,6 +65,8 @@ compile_commands.json
 *.toc
 
 build
+cmake-build-debug
+cmake-build-release
 # python
 __pycache__
 
