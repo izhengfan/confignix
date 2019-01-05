@@ -132,11 +132,11 @@ alias gdff='git diff'
 alias grep='grep -n --color=auto'
 
 # npm config
-NPM_PACKAGES="${HOME}/.npm-packages"
-PATH="$NPM_PACKAGES/bin:$PATH"
+# NPM_PACKAGES="${HOME}/.npm-packages"
+# PATH="$NPM_PACKAGES/bin:$PATH"
 # Unset manpath so we can inherit from /etc/manpath via the `manpath` command
-unset MANPATH # delete if you already modified MANPATH elsewhere in your config
-export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+# unset MANPATH # delete if you already modified MANPATH elsewhere in your config
+# export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 alias qmake5='qmake -qt5'
 
@@ -146,6 +146,9 @@ alias cmake='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
 # ros setup
 if [ -f /opt/ros/kinetic/setup.bash ]; then
     source /opt/ros/kinetic/setup.bash
+fi
+if [ -f /opt/ros/melodic/setup.bash ]; then
+    source /opt/ros/melodic/setup.bash
 fi
 # if [ -f ~/catkin_ws/devel/setup.bash ]; then
 #   source ~/catkin_ws/devel/setup.bash
