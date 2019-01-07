@@ -144,8 +144,8 @@ alias qmake5='qmake -qt5'
 alias cmake='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
 
 # ros setup
-if [ -f /opt/ros/melodic/setup.bash ]; then
-    source /opt/ros/melodic/setup.bash
+if [ -f /opt/ros/kinetic/setup.bash ]; then
+    source /opt/ros/kinetic/setup.bash
 fi
 if [ -f /opt/ros/melodic/setup.bash ]; then
     source /opt/ros/melodic/setup.bash

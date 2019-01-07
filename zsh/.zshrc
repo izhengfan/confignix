@@ -97,13 +97,16 @@ alias sc='source'
 
 
 # ros setup
-if [ -f /opt/ros/kinetic/setup.zsh ]; then 
+if [ -f /opt/ros/kinetic/setup.zsh ]; then
     source /opt/ros/kinetic/setup.zsh
+fi
+if [ -f /opt/ros/melodic/setup.zsh ]; then
+    source /opt/ros/melodic/setup.zsh
 fi
 # if [ -f ~/catkin_ws/devel/setup.zsh ]; then
 #   source ~/catkin_ws/devel/setup.zsh
 # fi
-# soruce ~/catkin_ws/setup.zsh may pollute PYTHONPATH
+# source ~/catkin_ws/setup.zsh may pollute PYTHONPATH
 # to use python3 normally, execute the following command
 #export PYTHONPATH=""
 
