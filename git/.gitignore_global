@@ -74,6 +74,7 @@ cmake-build-release
 
 # python
 __pycache__
+*.pyc
 
 # vim
 compile_commands.json

@@ -94,7 +94,10 @@ alias la='ls -A'
 alias l='ls -CF'
 alias cd.='cd ..'
 alias sc='source'
+alias trash='gio trash'
 
+# good for YouCompleteMe
+alias cmake='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
 
 # ros setup
 if [ -f /opt/ros/kinetic/setup.zsh ]; then
