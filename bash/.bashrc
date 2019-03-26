@@ -33,8 +33,8 @@ alias qmake5='qmake -qt5'
 
 # good for YouCompleteMe
 alias cmake='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
-alias catkin_make='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
-alias catkin_make_isolated='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
+alias catkin_make='catkin_make -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
+alias catkin_make_isolated='catkin_make_isolated -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
 
 # ros setup
 if [ -f /opt/ros/kinetic/setup.bash ]; then
