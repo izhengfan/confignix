@@ -1,4 +1,4 @@
-sudo apt-get remove libreoffice-calc libreoffice-math thunderbird unity-webapps* gnome-mahjongg gnome-sudoku gnome-maps aisleriot totem cheese empathy gnome-orca
+sudo apt-get remove libreoffice-calc libreoffice-math thunderbird unity-webapps* gnome-mahjongg gnome-sudoku gnome-maps aisleriot totem cheese empathy gnome-orca simple-scan
 sudo apt remove unity-scope-firefoxbookmarks \
     unity-scope-chromiumbookmarks \
     unity-scope-virtualbox \
