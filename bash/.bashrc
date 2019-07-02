@@ -32,9 +32,9 @@ alias grep='grep -n --color=auto'
 alias qmake5='qmake -qt5'
 
 # good for YouCompleteMe
-alias cmake='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
-alias catkin_make='catkin_make -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
-alias catkin_make_isolated='catkin_make_isolated -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
+# alias cmake='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
+# alias catkin_make='catkin_make -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
+# alias catkin_make_isolated='catkin_make_isolated -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
 
 # ros setup
 if [ -f /opt/ros/kinetic/setup.bash ]; then
@@ -53,6 +53,18 @@ fi
 
 # local path (it seems this is set in Ubuntu default)
 # export PATH=$PATH:~/.local/bin/
+v2() {
+    str=''
+    arr=("$@")
+    for i in ${!arr[@]}; do
+        if [ "$i" -eq 0 ]; then
+            str+="${arr[$i]}"
+        else
+            str+="%20${arr[$i]}"
+        fi
+    done
+    curl "v2en.co/$str"
+}
 
 # local dynamic lib setup
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
