@@ -1,1 +1,1 @@
-Style configuration files should usually be put under `~/.config/QtProject/qtcreator/styles`.
+In `~/.config/QtProject/qtcreator/`, add links to `snippets` and `styles`.
