@@ -51,8 +51,6 @@ CMakeLists.txt.user*
 # tags
 tags
 
-compile_commands.json
-
 # latex
 *.aux
 *.bbl
