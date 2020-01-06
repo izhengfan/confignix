@@ -1,5 +1,5 @@
-# do not show host name
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+# do not show host name; show git branch
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;32m\]$(__git_ps1)\n$\[\033[00m\] '
 
 # some more ls aliases
 alias lal='ls -alF'

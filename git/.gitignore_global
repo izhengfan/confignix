@@ -27,6 +27,7 @@ Thumbs.db
 *.o
 *.so
 *.lib
+*.a
 
 # ROS
 *.workspace
@@ -67,8 +68,7 @@ tags
 *.out
 
 build
-cmake-build-debug
-cmake-build-release
+cmake-build*
 
 # python
 __pycache__
