@@ -33,6 +33,15 @@ git rebase origin/master
 git checkout --orphan TEMP_BRANCH
 ```
 
+### Delete branch
+
+```
+# delete local
+git branch -D useless_branch
+# delete remote
+git push -d origin useless_branch
+```
+
 ### SSH keygen
 ```
 mkdir ~/.ssh 
