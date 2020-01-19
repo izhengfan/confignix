@@ -5,7 +5,7 @@ Tips
 
 ```
 git config --global user.name "izhengfan"
-git config --global user.email "mrzhengfan@gmail.com"
+git config --global user.email "hi@fzheng.me"
 ```
 
 ### Do not track file mode changes 
