@@ -74,3 +74,5 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 # customize terminal title
 PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
+export CMAKE_INSTALL_PREFIX=$HOME/.local/
+export CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:$HOME/.local
