@@ -1,8 +1,11 @@
+Tips
+---
+
 ### Config Users
 
 ```
 git config --global user.name "izhengfan"
-git config --global user.email "mrzhengfan@gmail.com"
+git config --global user.email "hi@fzheng.me"
 ```
 
 ### Do not track file mode changes 
@@ -28,6 +31,15 @@ git rebase origin/master
 
 ```
 git checkout --orphan TEMP_BRANCH
+```
+
+### Delete branch
+
+```
+# delete local
+git branch -D useless_branch
+# delete remote
+git push -d origin useless_branch
 ```
 
 ### SSH keygen

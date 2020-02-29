@@ -14,7 +14,7 @@ switcher:
   caption: 〔方案選單〕
   hotkeys:
     - Control+Shift+grave
-    - F4
+    - Shift+F4
   save_options:
     - full_shape
     - ascii_punct
